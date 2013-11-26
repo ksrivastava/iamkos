@@ -1,10 +1,10 @@
 <html>
-<head>
-<link rel="stylesheet" type="text/css" href="css/style.css">
-</head>
 
-<?php include 'php/send.php'; ?>
+<?php include 'views/header.html'; ?>
+<?php include 'views/topnav.html'; ?>
 
 <p> I will be redirecting you are </p>
+
+<?php include 'views/footer.html'; ?>
 
 </html>
