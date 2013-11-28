@@ -1,7 +1,17 @@
-#info {
-
+body {
+    width: 80%;
+    margin: auto;
+    padding: 50px;
+}
+#thumbnail {
+    float: left;
 }
 
-#info table {
-	border: 1px solid black;
+#info {
+    float: right;
+    width: 80%;
+}
+
+#info table td th {
+	text-align:left;
 }

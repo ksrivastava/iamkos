@@ -4,6 +4,9 @@
 	echo "<title>" . $result['title'] . "</title>";
 	echo "<link rel=\"stylesheet\" type=\"text/css\" href=\"../css/style.css\">";
 	echo "<body>";
+	if ($thumbnail != "") {
+		echo "<div id = \"thumbnail\"><img src=" . $thumbnail . "></div>";
+	}
 	echo "<div id = \"info\">";
 	echo "<table>";
 	echo "<tr><th>Key</th><th>Value</th></tr>";
@@ -24,9 +27,5 @@
 		echo "</tr>";
 	}
 	echo "</table></div>";
-	if ($thumbnail != "") {
-		echo "<div class = \"thumbnail\"><img src=" . $thumbnail . "></div>";
-	}
-
 	echo "</body></html>";
 ?>
