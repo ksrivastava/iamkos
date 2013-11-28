@@ -33,10 +33,22 @@
 	}
 
 	$google_query = "https://www.googleapis.com/books/v1/volumes?q=isbn:";
+	$json_only = false;
+
 	if(!isset($_GET["isbn"]) or trim($_GET["isbn"]) === '') {
 		echo "<p>Please enter an ISBN</p></br>";
 		echo "<a href=\"../\">Back</a>";
 		die();
+	}
+	if (isset($_GET["format"])) {
+		if ($_GET["format"] == "json") {
+			$json_only = true;
+		}
+		else {
+			echo "<p>Format not recognized</p></br>";
+			echo "<a href=\"../\">Back</a>";
+			die();
+		}
 	}
 	$isbn = $_GET["isbn"];
 	logger($isbn);
@@ -58,11 +70,12 @@
 	$thumbnail = getImage($book, "thumbnail", $result);
 
 	$result_json = json_encode($result);
-	echo $result_json;
-
-	if ($thumbnail != "") {
-		echo "</br><img src=" . $thumbnail . ">";
+	if ($json_only) {
+		echo $result_json;
+		die();
 	}
+
+	include('info.php');
 
 	// TODO
 		// -- Provide to templates to present in a nice way
