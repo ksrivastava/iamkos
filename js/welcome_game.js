@@ -1,4 +1,5 @@
-var inside_count = 0;
+	//test();
+	var inside_count = 0;
 
 	function fixImage(id, image) {
 		image.style.top = 5 + "px";
@@ -13,7 +14,7 @@ var inside_count = 0;
 	}
 
 	function moveImage(image)
-	{	
+	{
 		var id = image.id.substr(image.id.length - 1);
 		var is_inside_before_move = isInside(id, image);
 
@@ -36,6 +37,11 @@ var inside_count = 0;
 			welcome(true);
 		}
 		else welcome(false);
+	}
+
+	function test(){
+		console.log("helo");
+		window.setTimeout("test();", 1000*0.5);
 	}
 
 	function welcome(show)
