@@ -1,0 +1,40 @@
+html {
+	background-color: white;
+    border-top: 160px solid #97FA02;
+}
+
+.buttons
+{
+	height: 20%;
+	position: absolute;
+	top: 45%;
+}
+
+#button1
+{
+	left: 15%;
+}
+
+#button2
+{
+	left: 35%;
+}
+
+#button3
+{
+	left: 55%;
+}
+
+#button4
+{
+	left: 75%;
+}
+
+#welcome
+{
+	position: absolute;
+	text-transform:lowercase;
+	font-size:20px;
+	top: 75%;
+	left: 45%;
+}
