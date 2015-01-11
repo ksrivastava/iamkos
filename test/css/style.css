@@ -1,0 +1,21 @@
+header {
+	height: 50px;
+	position:fixed;
+	top:0px;
+	left:0px;
+	height:70px; 
+	width:100%;
+	background: white;
+}
+
+#nav {
+}
+
+.section {
+	height: 1000px;
+}
+
+.page-padding {
+	height: 90px;
+	width: 100%;
+}

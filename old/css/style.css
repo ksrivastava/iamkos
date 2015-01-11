@@ -1,0 +1,21 @@
+#topnav
+{
+	display: inline-block;
+	left: 50%
+}
+
+#topnav ul
+{
+	list-style-type:none;
+}
+
+#topnav img
+{
+	height: 8%;
+	padding-left: 20px;
+}
+
+#topnav li
+{
+	display:inline;
+}
